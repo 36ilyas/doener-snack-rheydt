@@ -7,6 +7,7 @@
   --navy-900: #081530;
   --navy-700: #16294f;
   --navy-600: #23386b;
+  --navy-light: #93c5fd; /* helle "Döner"-Markenfarbe auf dunklem Grund */
   --pink: #E6356E;
   --pink-600: #d12660;
   --pink-700: #b51e51;
@@ -51,7 +52,7 @@ h1, h2, h3, h4 {
 p { margin: 0; }
 ::selection { background: var(--pink); color: #fff; }
 
-.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
 
 .eyebrow {
   font-family: var(--ff-body);
@@ -78,7 +79,9 @@ p { margin: 0; }
 .wm { display: inline-flex; align-items: baseline; gap: .18em; line-height: 1; white-space: nowrap; }
 .wm-doner { font-family: var(--ff-display); font-weight: 800; letter-spacing: -.02em; color: var(--navy); }
 .wm-snack { font-family: var(--ff-script); color: var(--pink); font-weight: 400; transform: translateY(.02em); }
-.wm.on-dark .wm-doner { color: #fff; }
+.wm.on-dark .wm-doner { color: var(--navy-light); }
+/* Sobald die Nav beim Scrollen weißen Hintergrund bekommt, klappt "Döner" auf das echte Marken-Navy zurück */
+header.nav.scrolled .wm.on-dark .wm-doner { color: var(--navy); }
 .wm--lg { font-size: 30px; }
 .wm--lg .wm-snack { font-size: 38px; }
 .wm--xl { font-size: clamp(40px, 9vw, 84px); }
@@ -276,6 +279,7 @@ header.nav.scrolled .burger span { background: var(--navy); }
   letter-spacing: -.025em;
   margin-top: 18px;
 }
+.hero h1 .h1-doner { color: var(--navy-light); }
 .hero .slogan {
   font-family: var(--ff-script);
   color: var(--pink);

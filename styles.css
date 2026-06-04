@@ -695,6 +695,26 @@ footer.ft {
   .reveal { opacity: 1; transform: none; transition: none; }
 }
 
+/* ---------- Mobile-Override (kleine Phones) ---------- */
+@media (max-width: 679px) {
+  /* Nav-CTA aufs Icon reduzieren — sonst frisst er den Platz fürs Burger-Menü
+     und es fließt rechts aus dem Viewport raus */
+  .nav-cta-call { padding: 11px 13px; gap: 0; }
+  .nav-cta-call .nav-cta-text { display: none; }
+
+  /* Hero kompakter — kein Full-Screen-Lock, kleinere Schrift, weniger Padding */
+  .hero { min-height: auto; }
+  .hero-inner { padding-top: 96px; padding-bottom: 52px; }
+  .hero h1 { font-size: 34px; }
+  .hero .slogan { font-size: 25px; }
+  .hero .lead { font-size: 15.5px; margin-top: 16px; }
+  .hero-cta { margin-top: 22px; gap: 10px; }
+  .hero-cta .btn { font-size: 14px; padding: 13px 16px; min-height: 48px; gap: 8px; }
+  .hero-cta .btn svg { width: 17px; height: 17px; }
+  .hero-meta { margin-top: 20px; gap: 11px 16px; }
+  .status, .hero-rating { font-size: 13.5px; }
+}
+
 /* ---------- Responsive ---------- */
 @media (min-width: 680px) {
   .sauce-grid { grid-template-columns: repeat(3, 1fr); }

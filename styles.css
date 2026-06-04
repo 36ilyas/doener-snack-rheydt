@@ -7,7 +7,7 @@
   --navy-900: #081530;
   --navy-700: #16294f;
   --navy-600: #23386b;
-  --navy-light: #93c5fd; /* helle "Döner"-Markenfarbe auf dunklem Grund */
+  --navy-light: #3B82F6; /* sattes Marken-Blau für "Döner" auf dunklem Grund */
   --pink: #E6356E;
   --pink-600: #d12660;
   --pink-700: #b51e51;
@@ -270,7 +270,11 @@ header.nav.scrolled .burger span { background: var(--navy); }
   position: relative;
   z-index: 3;
   width: 100%;
-  padding: 120px 0 54px;
+  /* nur vertikal setzen — horizontal kommt vom .wrap-Container,
+     sonst frisst dieses padding das wrap-Padding auf und der
+     Content sitzt bündig am Viewport-Rand */
+  padding-top: 120px;
+  padding-bottom: 54px;
 }
 .hero h1 {
   color: #fff;

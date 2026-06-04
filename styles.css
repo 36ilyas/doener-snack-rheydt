@@ -7,7 +7,7 @@
   --navy-900: #081530;
   --navy-700: #16294f;
   --navy-600: #23386b;
-  --navy-light: #3B82F6; /* sattes Marken-Blau für "Döner" auf dunklem Grund */
+  --navy-light: #1D4ED8; /* tiefes Marken-Blau für "Döner" — funktioniert auf hellem & dunklem Grund */
   --pink: #E6356E;
   --pink-600: #d12660;
   --pink-700: #b51e51;
@@ -80,8 +80,8 @@ p { margin: 0; }
 .wm-doner { font-family: var(--ff-display); font-weight: 800; letter-spacing: -.02em; color: var(--navy); }
 .wm-snack { font-family: var(--ff-script); color: var(--pink); font-weight: 400; transform: translateY(.02em); }
 .wm.on-dark .wm-doner { color: var(--navy-light); }
-/* Sobald die Nav beim Scrollen weißen Hintergrund bekommt, klappt "Döner" auf das echte Marken-Navy zurück */
-header.nav.scrolled .wm.on-dark .wm-doner { color: var(--navy); }
+/* "Döner" behält dieselbe Marken-Blau-Farbe — auch wenn die Nav beim
+   Scrollen zu weißem Hintergrund wechselt. Kein Farbwechsel mehr. */
 .wm--lg { font-size: 30px; }
 .wm--lg .wm-snack { font-size: 38px; }
 .wm--xl { font-size: clamp(40px, 9vw, 84px); }

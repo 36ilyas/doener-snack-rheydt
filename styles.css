@@ -706,7 +706,7 @@ footer.ft {
   .hero { min-height: auto; }
   .hero-inner { padding-top: 96px; padding-bottom: 52px; }
   .hero h1 { font-size: 34px; }
-  .hero .slogan { font-size: 25px; }
+  .hero .slogan { font-size: 30px; } /* Slogan trägt jetzt die Headline — etwas mehr Präsenz */
   .hero .lead { font-size: 15.5px; margin-top: 16px; }
   .hero-cta { margin-top: 22px; gap: 10px; }
   .hero-cta .btn { font-size: 14px; padding: 13px 16px; min-height: 48px; gap: 8px; }
